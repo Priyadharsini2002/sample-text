@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add to cart</title>
+    <link rel="stylesheet" href="static\style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      
+      body{
+        background: rgb(223, 211, 211);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      .navbar{
+        background-color: rgb(245, 245, 102);
+        border-radius: 30px;
+      }
+
+      .navbar li{
+        float:left;
+        list-style: none; 
+        margin: 13px 20px;
+    }
+
+    .navbar ul{
+      overflow: auto;
+  }
+
+  .navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: black;
+}
+table{
+  width: 80%;
+  margin: 40px auto;
+  background: rgb(180, 106, 219);
+}
+td{
+  border: 1px solid rgb(204,200,200);
+  text-align: left;
+  padding: 8px 15px;
+}
+
+input[type="text"],input[type="number"]{
+  width:91%;
+  padding:12px 20px;
+  margin:8px 0;
+  display: inline-block;
+  border: 1px solid rgb(165,161,161);
+  border-radius: 4px;
+}
+
+input[type="submit"],input[type="reset"]{
+  background: #eee;
+  padding:6px 12px;
+  margin:15px 0 10px;
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="submit"]:hover{
+  background: #4b99d8;
+}
+
+input[type="reset"]:hover{
+  background: #4b99d8;
+}
+
+button{
+  background: #eee;
+  padding:6px 12px;
+  margin:15px 0 10px;
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover{
+  background:#4b99d8 ;
+}
+
+header .navbar a:hover{
+  color: red;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+          <ul>
+              <li><a href="#">Suppiler</a></li>
+              <li><a href="display.html">Inventory</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="#">Transcation</a></li>
+              
+          </ul>
+      </nav>
+  </header>
+   
+  <table>
+    <tr>
+        <td>
+            <form>
+                <div>
+                    <label for="productCode">Customer Name</label>
+                    <input type="text" name="productCode" id="productCode">
+                </div>
+                <div>
+                    <label for="product">Product Name</label><br>
+                    <input type="text" name="product" id="product">
+                </div>
+                <div>
+                    <label for="qty">Quantity available</label>
+                    <input type="number" name="qty" id="qty">
+                </div>
+                <div>
+                    <label for="perPrice">Price</label><br>
+                    <input type="number" name="perPrice" id="perPrice">
+                </div>
+                <div>
+                    <label for="suppiler">Supplier</label><br>
+                    <input type="text" name="product" id="product">
+                </div><br>
+
+                <div class="form_action--button">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+  </body>
+</html>
